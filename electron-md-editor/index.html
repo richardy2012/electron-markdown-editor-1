@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MarkDown Editor</title>
+  </head>
+  <body>
+    <div id="editor">
+      <textarea v-model="input"></textarea>
+      <div v-html="input | marked"></div>
+    </div>
+
+    <script src='./script.js'></script>
+  </body>
+</html>
